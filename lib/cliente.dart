@@ -13,14 +13,14 @@ class Cliente extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // Application name
-      title: 'Gas Natural',
+      title: 'Licencias',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: {
-        '/Sesion': (context) => Sesion(),
+        '/Login': (context) => Login(),
         '/Cliente': (context) => Cliente(),
         '/DatosEmpleados': (context) => DatosEmpleados(),
         '/DatosClientes': (context) => DatosClientes(),

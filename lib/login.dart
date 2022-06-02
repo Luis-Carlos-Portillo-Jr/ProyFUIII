@@ -6,21 +6,21 @@ import 'package:portillo/datos.dart';
 import 'package:portillo/conclusion.dart';
 import 'package:portillo/cliente.dart';
 
-class Sesion extends StatelessWidget {
+class Login extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // Application name
-      title: 'Gas Natural',
+      title: 'Licencias',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: {
-        '/Sesion': (context) => Sesion(),
+        '/Login': (context) => Login(),
         '/Cliente': (context) => Cliente(),
         '/DatosEmpleados': (context) => DatosEmpleados(),
         '/DatosClientes': (context) => DatosClientes(),

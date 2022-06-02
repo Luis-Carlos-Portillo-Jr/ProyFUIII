@@ -20,7 +20,7 @@ class Empleados extends StatelessWidget {
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: {
-        '/Sesion': (context) => Sesion(),
+        '/Login': (context) => Login(),
         '/Cliente': (context) => Cliente(),
         '/DatosEmpleados': (context) => DatosEmpleados(),
         '/DatosClientes': (context) => DatosClientes(),
