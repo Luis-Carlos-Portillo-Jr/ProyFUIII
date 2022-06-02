@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        backgroundColor: const Color.fromRGBO(95, 115, 254, 1),
+        backgroundColor: const Color.fromRGBO(32, 121, 64, 1),
       ),
       drawer: Drawer(
         child: ListView(
@@ -74,7 +74,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.arrow_right_outlined,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Inicio de Sesion'),
               onTap: () {
@@ -84,7 +84,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.api,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de Empleados'),
               onTap: () {
@@ -94,7 +94,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.umbrella,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de cliente'),
               onTap: () {
@@ -104,7 +104,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.headset_off,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Empleados'),
               onTap: () {
@@ -114,7 +114,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.local_airport,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Cliente'),
               onTap: () {
@@ -124,7 +124,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.add_alert,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Conclusion'),
               onTap: () {
@@ -134,7 +134,7 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.luggage_sharp,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Desarrollador'),
               onTap: () {
