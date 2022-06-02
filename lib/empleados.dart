@@ -13,7 +13,7 @@ class Empleados extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // Application name
-      title: 'Gas Natural',
+      title: 'Licencias',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
