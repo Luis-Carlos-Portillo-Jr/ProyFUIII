@@ -191,7 +191,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia6.png',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
