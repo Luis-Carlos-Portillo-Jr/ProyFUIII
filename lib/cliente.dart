@@ -249,7 +249,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia2.jpg',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
@@ -307,7 +307,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia4.jpg',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
@@ -365,7 +365,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia5.jpeg',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
@@ -423,7 +423,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia1.jpg',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
@@ -481,7 +481,7 @@ class MyHomePage extends StatelessWidget {
                                   topRight: Radius.circular(15),
                                 ),
                                 child: Image.network(
-                                  'https://picsum.photos/seed/313/600',
+                                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/Licencia7.png',
                                   width: double.infinity,
                                   height: 100,
                                   fit: BoxFit.cover,
