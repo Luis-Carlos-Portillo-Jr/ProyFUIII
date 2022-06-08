@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         '/Login': (context) => Login(),
         '/Cliente': (context) => Cliente(),
         '/DatosEmpleados': (context) => DatosEmpleados(),
-        '/DatosClientes': (context) => DatosClientes(),
+        '/Datos': (context) => Datos(),
         '/Conclusion': (context) => Conclusion(),
         '/Empleados': (context) => Empleados(),
         '/Desarrollador': (context) => Desarrollador(),
