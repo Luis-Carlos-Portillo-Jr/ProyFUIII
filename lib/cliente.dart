@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Inicio',
+          'Articulos',
           style: TextStyle(
             color: Colors.white,
           ),

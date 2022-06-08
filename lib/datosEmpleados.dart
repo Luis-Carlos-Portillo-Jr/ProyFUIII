@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Inicio',
+          'Datos del emlpeado',
           style: TextStyle(
             color: Colors.white,
           ),
@@ -56,9 +56,9 @@ class MyHomePage extends StatelessWidget {
           children: [
             const UserAccountsDrawerHeader(
               // <-- SEE HERE
-              decoration: BoxDecoration(color: const Color.fromRGBO(95, 115, 254, 1)),
+              decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
               accountName: Text(
-                "Liciencias de Conducir",
+                "Licencias de Conducir",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -73,7 +73,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.arrow_right_outlined,
+                Icons.lock,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Inicio de Sesion'),
@@ -83,7 +83,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.api,
+                Icons.person,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de Empleados'),
@@ -93,7 +93,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.umbrella,
+                Icons.shopping_cart,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de cliente'),
@@ -103,7 +103,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.headset_off,
+                Icons.photo_album,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Empleados'),
@@ -113,17 +113,17 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.local_airport,
+                Icons.shopping_bag,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
-              title: const Text('Cliente'),
+              title: const Text('Articulos'),
               onTap: () {
                 Navigator.pushNamed(context, '/Cliente');
               },
             ),
             ListTile(
               leading: Icon(
-                Icons.add_alert,
+                Icons.textsms,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Conclusion'),
@@ -133,7 +133,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.luggage_sharp,
+                Icons.computer,
                 color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Desarrollador'),
