@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
-            const UserAccountsDrawerHeader(
+            new UserAccountsDrawerHeader(
               // <-- SEE HERE
               decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
               accountName: Text(
@@ -69,7 +69,11 @@ class MyHomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              currentAccountPicture: FlutterLogo(),
+              currentAccountPicture: new CircleAvatar(
+                radius: 60.0,
+                backgroundColor: const Color(0xFF778899),
+                backgroundImage: NetworkImage("https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/NicePng_car-logo-png_671323.png"), // for Network image
+              ),
             ),
             ListTile(
               leading: Icon(
