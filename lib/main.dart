@@ -57,23 +57,35 @@ class MyHomePage extends StatelessWidget {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
-            const UserAccountsDrawerHeader(
-              // <-- SEE HERE
-              decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
-              accountName: Text(
-                "Licencias de Conducir",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+            new UserAccountsDrawerHeader(
+                // <-- SEE HERE
+                decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
+                accountName: Text(
+                  "Licencias de Conducir",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              accountEmail: Text(
-                "estropajo@gmail.com",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+                accountEmail: Text(
+                  "estropajo@gmail.com",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              currentAccountPicture: FlutterLogo(),
-            ),
+                currentAccountPicture: new Container(
+                  margin: const EdgeInsets.only(bottom: 40.0),
+                  width: 10.0,
+                  height: 10.0,
+                  decoration: new BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: new DecorationImage(
+                      fit: BoxFit.fill,
+                      image: new NetworkImage(
+                        "https://example.com/assets/images/john-doe.jpg",
+                      ),
+                    ),
+                  ),
+                )),
             ListTile(
               leading: Icon(
                 Icons.lock,
