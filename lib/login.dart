@@ -217,7 +217,14 @@ class MyHomePage extends StatelessWidget {
                   ),
                   child: const Text('Acceder'),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/Articulos');
+                    showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(title: Text('Acceso Correcto'), content: Text('Se ha iniciado la sesion correctamente'), actions: [
+                              TextButton(
+                                child: Text('Aceptar'),
+                                onPressed: () => Navigator.pop(context),
+                              ),
+                            ]));
                   },
                 ),
               ),
