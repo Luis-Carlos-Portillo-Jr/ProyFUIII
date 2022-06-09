@@ -333,9 +333,13 @@ class MyHomePage extends StatelessWidget {
                     onPressed: () {
                       showDialog(
                           context: context,
-                          builder: (context) => AlertDialog(title: Text('Hola'), content: Text('Texto'), actions: [
+                          builder: (context) => AlertDialog(title: Text('Deseas guardar los datos?'), content: Text('Texto'), actions: [
                                 TextButton(
-                                  child: Text('Va'),
+                                  child: Text('Aceptar'),
+                                  onPressed: () => Navigator.pop(context),
+                                ),
+                                TextButton(
+                                  child: Text('Cancelar'),
                                   onPressed: () => Navigator.pop(context),
                                 )
                               ]));
