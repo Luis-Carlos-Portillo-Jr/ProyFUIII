@@ -179,7 +179,7 @@ class MyHomePage extends StatelessWidget {
                     primary: Color.fromRGBO(46, 150, 82, 1),
                     onPrimary: Colors.white,
                   ),
-                  child: const Text('Sign In'),
+                  child: const Text('Inicia sesion'),
                   onPressed: () {
                     Navigator.pushNamed(context, '/Login');
                   },
