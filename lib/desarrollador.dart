@@ -172,8 +172,8 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 80,
-                height: 80,
+                width: 128,
+                height: 128,
                 decoration: BoxDecoration(
                   color: Color(0xFFEEEEEE),
                 ),
