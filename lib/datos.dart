@@ -329,7 +329,7 @@ class MyHomePage extends StatelessWidget {
                       primary: Color.fromRGBO(46, 150, 82, 1),
                       onPrimary: Colors.white,
                     ),
-                    child: const Text('Acceder'),
+                    child: const Text('Guardar'),
                     onPressed: () {
                       Navigator.pushNamed(context, '/Articulos');
                     },
