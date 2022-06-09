@@ -58,34 +58,26 @@ class MyHomePage extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             new UserAccountsDrawerHeader(
-                // <-- SEE HERE
-                decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
-                accountName: Text(
-                  "Licencias de Conducir",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+              // <-- SEE HERE
+              decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
+              accountName: Text(
+                "Licencias de Conducir",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-                accountEmail: Text(
-                  "estropajo@gmail.com",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+              ),
+              accountEmail: Text(
+                "estropajo@gmail.com",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-                currentAccountPicture: new Container(
-                  margin: const EdgeInsets.only(bottom: 40.0),
-                  width: 30.0,
-                  height: 30.0,
-                  decoration: new BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: new DecorationImage(
-                      fit: BoxFit.fill,
-                      image: new NetworkImage(
-                        "https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/NicePng_car-logo-png_671323.png",
-                      ),
-                    ),
-                  ),
-                )),
+              ),
+              currentAccountPicture: new CircleAvatar(
+                radius: 60.0,
+                backgroundColor: const Color(0xFF778899),
+                backgroundImage: NetworkImage("Your Photo Url"), // for Network image
+              ),
+            ),
             ListTile(
               leading: Icon(
                 Icons.lock,
