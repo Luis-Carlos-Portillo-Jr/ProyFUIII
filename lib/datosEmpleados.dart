@@ -331,7 +331,18 @@ class MyHomePage extends StatelessWidget {
                     ),
                     child: const Text('Guardar'),
                     onPressed: () {
-                      Navigator.pushNamed(context, '/Articulos');
+                      showDialog(
+                          context: context,
+                          builder: (context) => AlertDialog(title: Text('Datos Aceptados'), content: Text('Deseas guardar estos datos?'), actions: [
+                                TextButton(
+                                  child: Text('Aceptar'),
+                                  onPressed: () => Navigator.pop(context),
+                                ),
+                                TextButton(
+                                  child: Text('Cancelar'),
+                                  onPressed: () => Navigator.pop(context),
+                                )
+                              ]));
                     },
                   ),
                 ),
