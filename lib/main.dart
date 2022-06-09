@@ -75,7 +75,7 @@ class MyHomePage extends StatelessWidget {
               currentAccountPicture: new CircleAvatar(
                 radius: 60.0,
                 backgroundColor: const Color(0xFF778899),
-                backgroundImage: NetworkImage("Your Photo Url"), // for Network image
+                backgroundImage: NetworkImage("https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/NicePng_car-logo-png_671323.png"), // for Network image
               ),
             ),
             ListTile(
