@@ -171,6 +171,19 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Color(0xFFEEEEEE),
+                ),
+                child: Image.network(
+                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/dios.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ],
           ),
         ),
