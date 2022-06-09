@@ -13,17 +13,17 @@ class Desarrollador extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // Application name
-      title: 'Gas Natural',
+      title: 'Licencias',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: {
-        '/Sesion': (context) => Sesion(),
+        '/Login': (context) => Login(),
         '/Cliente': (context) => Cliente(),
         '/DatosEmpleados': (context) => DatosEmpleados(),
-        '/DatosClientes': (context) => DatosClientes(),
+        '/Datos': (context) => Datos(),
         '/Conclusion': (context) => Conclusion(),
         '/Empleados': (context) => Empleados(),
         '/Desarrollador': (context) => Desarrollador(),
@@ -42,23 +42,23 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Inicio',
+          'Desarrollador',
           style: TextStyle(
             color: Colors.white,
           ),
         ),
-        backgroundColor: const Color.fromRGBO(95, 115, 254, 1),
+        backgroundColor: const Color.fromRGBO(32, 121, 64, 1),
       ),
       drawer: Drawer(
         child: ListView(
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
-            const UserAccountsDrawerHeader(
+            new UserAccountsDrawerHeader(
               // <-- SEE HERE
-              decoration: BoxDecoration(color: const Color.fromRGBO(95, 115, 254, 1)),
+              decoration: BoxDecoration(color: const Color.fromRGBO(42, 143, 2, 1)),
               accountName: Text(
-                "Liciencias de Conducir",
+                "Licencias de Conducir",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -69,12 +69,16 @@ class MyHomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              currentAccountPicture: FlutterLogo(),
+              currentAccountPicture: new CircleAvatar(
+                radius: 60.0,
+                backgroundColor: const Color(0xFF778899),
+                backgroundImage: NetworkImage("https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/NicePng_car-logo-png_671323.png"), // for Network image
+              ),
             ),
             ListTile(
               leading: Icon(
-                Icons.arrow_right_outlined,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.lock,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Inicio de Sesion'),
               onTap: () {
@@ -83,8 +87,8 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.api,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.person,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de Empleados'),
               onTap: () {
@@ -93,8 +97,8 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.umbrella,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.shopping_cart,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Datos de cliente'),
               onTap: () {
@@ -103,8 +107,8 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.headset_off,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.photo_album,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Empleados'),
               onTap: () {
@@ -113,18 +117,18 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.local_airport,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.shopping_bag,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
-              title: const Text('Cliente'),
+              title: const Text('Articulos'),
               onTap: () {
                 Navigator.pushNamed(context, '/Cliente');
               },
             ),
             ListTile(
               leading: Icon(
-                Icons.add_alert,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.textsms,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Conclusion'),
               onTap: () {
@@ -133,8 +137,8 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.luggage_sharp,
-                color: Color.fromRGBO(66, 206, 245, 1),
+                Icons.computer,
+                color: Color.fromRGBO(32, 121, 64, 1),
               ),
               title: const Text('Desarrollador'),
               onTap: () {
@@ -165,6 +169,19 @@ class MyHomePage extends StatelessWidget {
                     'Luis Carlos Portillo \n6-I\nProgramacion \nUsando FlutLab y Flutter Flow\nGithub para recursos\nDesde el dia 31 de may al 1 de junio\n',
                     style: TextStyle(),
                   ),
+                ),
+              ),
+              Container(
+                width: 128,
+                height: 128,
+                decoration: BoxDecoration(
+                  color: Color(0xFFEEEEEE),
+                ),
+                child: Image.network(
+                  'https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/dios.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.fill,
                 ),
               ),
             ],
