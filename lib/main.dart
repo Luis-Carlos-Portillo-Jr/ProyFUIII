@@ -74,8 +74,8 @@ class MyHomePage extends StatelessWidget {
                 ),
                 currentAccountPicture: new Container(
                   margin: const EdgeInsets.only(bottom: 40.0),
-                  width: 10.0,
-                  height: 10.0,
+                  width: 50.0,
+                  height: 50.0,
                   decoration: new BoxDecoration(
                     shape: BoxShape.circle,
                     image: new DecorationImage(
