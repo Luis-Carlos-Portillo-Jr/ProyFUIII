@@ -81,7 +81,7 @@ class MyHomePage extends StatelessWidget {
                     image: new DecorationImage(
                       fit: BoxFit.fill,
                       image: new NetworkImage(
-                        "https://example.com/assets/images/john-doe.jpg",
+                        "https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/LogoL.png",
                       ),
                     ),
                   ),
