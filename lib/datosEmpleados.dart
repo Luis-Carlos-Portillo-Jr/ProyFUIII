@@ -320,6 +320,21 @@ class MyHomePage extends StatelessWidget {
                     style: TextStyle(),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                      side: BorderSide(color: Color.fromRGBO(95, 115, 254, 1), width: 1),
+                      primary: Color.fromRGBO(46, 150, 82, 1),
+                      onPrimary: Colors.white,
+                    ),
+                    child: const Text('Acceder'),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/Articulos');
+                    },
+                  ),
+                ),
               ],
             ),
           ),
