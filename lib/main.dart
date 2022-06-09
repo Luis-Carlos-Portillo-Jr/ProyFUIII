@@ -74,14 +74,14 @@ class MyHomePage extends StatelessWidget {
                 ),
                 currentAccountPicture: new Container(
                   margin: const EdgeInsets.only(bottom: 40.0),
-                  width: 50.0,
-                  height: 50.0,
+                  width: 30.0,
+                  height: 30.0,
                   decoration: new BoxDecoration(
                     shape: BoxShape.circle,
                     image: new DecorationImage(
                       fit: BoxFit.fill,
                       image: new NetworkImage(
-                        "https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/LogoL.png",
+                        "https://raw.githubusercontent.com/Luis-Carlos-Portillo-Jr/imagenes/main/NicePng_car-logo-png_671323.png",
                       ),
                     ),
                   ),
